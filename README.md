@@ -1,2 +1,2 @@
 # trustco-solo
-Project build with HTML &amp; CSS only
+Project built with HTML &amp; CSS only
