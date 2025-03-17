@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
   --primary-color: #043a53;
@@ -6,6 +7,7 @@
   --white: #ffffff;
   --background-main: #f2f5f6;
   --logo-link-color: #787878;
+  --box-shadow-primary: #043a533d;
 }
 
 * {
@@ -18,7 +20,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: "Poppins";
+  font-family: "Poppins", "Lato", sans-serif;
   line-height: 1;
   font-weight: 400;
   font-synthesis: none;
@@ -88,6 +90,166 @@ p {
   font-size: medium;
   line-height: 1;
 }
+
+.btn-primary {
+  display: inline-flex;
+  gap: 25px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 55px;
+  background: var(--primary-color);
+  box-shadow: 0px 23px 47px 0px var(--box-shadow-primary);
+  color: var(--white);
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-secondary-icon-noborder {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 16px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 55px;
+  background-color: var(--background-main);
+  box-shadow: 0px 23px 47px 0px var(--box-shadow-primary);
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-secondary-icon-noborder span {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+  color: var(--primary-color);
+  padding-top: 2px;
+  margin: 0;
+}
+
+.btn-secondary-icon-noborder:hover {
+  background-color: var(--background-main);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section styling starts here */
+
+.main-container .hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 100px 120px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .hero-section .hero-block {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  max-width: 1200px;
+  max-height: fit-content;
+  padding: 0px 40.77px;
+}
+.main-container .hero-section .hero-block .hero-block-left-img {
+  max-width: 197.42px;
+  max-height: 340px;
+}
+.main-container .hero-section .hero-block .hero-block-text-sec {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60.82px;
+}
+.main-container .hero-section .hero-block .hero-block-right-img {
+  max-width: 212.04px;
+  max-height: 340px;
+}
+.main-container
+  .hero-section
+  .hero-block
+  .hero-block-text-sec
+  .hero-main-heading {
+  font-family: "Lato";
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  color: var(--text-black);
+  word-wrap: break-word;
+  word-break: normal;
+}
+.main-container
+  .hero-section
+  .hero-block
+  .hero-block-text-sec
+  .hero-main-heading
+  span {
+  font-family: "Lato";
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  color: var(--primary-color);
+}
+.main-container
+  .hero-section
+  .hero-block
+  .hero-block-text-sec
+  .hero-main-heading
+  .hero-sub-text {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 70%;
+  padding: 14px;
+}
+.main-container .hero-section .hero-block .hero-block-text-sec .Button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section styling ends here */
 
 @media only screen and (min-width: 601) and (max-width: 992px) {
   h2 {
