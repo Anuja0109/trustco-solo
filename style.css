@@ -132,6 +132,7 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
+
 .btn-secondary-icon-noborder span {
   font-family: "Lato";
   font-weight: 700;
@@ -173,6 +174,7 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .main-container .hero-section .hero-block {
   display: flex;
   flex-direction: row;
@@ -181,10 +183,12 @@ p {
   max-height: fit-content;
   padding: 0px 40.77px;
 }
+
 .main-container .hero-section .hero-block .hero-block-left-img {
   max-width: 197.42px;
   max-height: 340px;
 }
+
 .main-container .hero-section .hero-block .hero-block-text-sec {
   display: flex;
   flex-direction: column;
@@ -195,15 +199,13 @@ p {
   padding: 0;
   margin-bottom: 60.82px;
 }
+
 .main-container .hero-section .hero-block .hero-block-right-img {
   max-width: 212.04px;
   max-height: 340px;
 }
-.main-container
-  .hero-section
-  .hero-block
-  .hero-block-text-sec
-  .hero-main-heading {
+
+.main-container .hero-section .hero-block .hero-block-text-sec .hero-main-heading {
   font-family: "Lato";
   font-weight: 800;
   font-size: 64px;
@@ -214,12 +216,8 @@ p {
   word-wrap: break-word;
   word-break: normal;
 }
-.main-container
-  .hero-section
-  .hero-block
-  .hero-block-text-sec
-  .hero-main-heading
-  span {
+
+.main-container .hero-section .hero-block .hero-block-text-sec .hero-main-heading span {
   font-family: "Lato";
   font-weight: 800;
   font-size: 64px;
@@ -228,12 +226,8 @@ p {
   text-align: center;
   color: var(--primary-color);
 }
-.main-container
-  .hero-section
-  .hero-block
-  .hero-block-text-sec
-  .hero-main-heading
-  .hero-sub-text {
+
+.main-container .hero-section .hero-block .hero-block-text-sec .hero-main-heading .hero-sub-text {
   font-family: "Lato";
   font-weight: 500;
   font-size: 20px;
@@ -243,6 +237,7 @@ p {
   opacity: 70%;
   padding: 14px;
 }
+
 .main-container .hero-section .hero-block .hero-block-text-sec .Button-group {
   display: flex;
   flex-direction: row;
@@ -270,6 +265,7 @@ p {
   align-items: center;
   overflow-x: hidden;
 }
+
 .main-container .tb-section .title {
   font-family: "Lato";
   font-weight: 500;
@@ -278,6 +274,7 @@ p {
   letter-spacing: 0%;
   white-space: nowrap;
 }
+
 .main-container .tb-section .icons-group {
   display: flex;
   flex-direction: row;
@@ -286,11 +283,13 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 /* Trusted Brands css ends here */
 
 /* Media Queries */
 
 @media only screen and (max-width: 1118px) {
+
   /* Trusted Brands responsive css starts here */
   .main-container .tb-section {
     flex-direction: column;
@@ -301,6 +300,7 @@ p {
     padding-left: 20px;
     width: 100%;
   }
+
   /* Trusted Brands responsive css ends here */
 }
 
@@ -320,11 +320,13 @@ p {
   h5 {
     font-size: 1rem;
   }
+
   /* Trusted Brands responsive css starts here */
   .main-container .tb-section .icons-group {
     flex-wrap: wrap;
     gap: 20px;
   }
+
   /* Trusted Brands responsive css ends here */
 }
 
@@ -345,10 +347,12 @@ p {
   .main-container .hero-section {
     padding: 40px 22px 37px 21px;
   }
+
   .main-container .hero-section .hero-block {
     padding: 0px;
     flex-wrap: wrap;
   }
+
   .main-container .hero-section .hero-block .hero-block-left-img {
     order: 2;
     clear: both;
@@ -357,6 +361,7 @@ p {
     padding-bottom: 33px;
     margin-left: 24px;
   }
+
   .main-container .hero-section .hero-block .hero-block-right-img {
     order: 2;
     clear: both;
@@ -365,6 +370,7 @@ p {
     padding-top: 40px;
     margin-right: 24px;
   }
+
   .main-container .hero-section .hero-block .hero-block-text-sec {
     order: 1;
     float: left;
@@ -372,30 +378,19 @@ p {
     gap: 16px;
   }
 
-  .main-container
-    .hero-section
-    .hero-block
-    .hero-block-text-sec
-    .hero-main-heading,
-  .main-container
-    .hero-section
-    .hero-block
-    .hero-block-text-sec
-    .hero-main-heading
-    span {
+  .main-container .hero-section .hero-block .hero-block-text-sec .hero-main-heading,
+  .main-container .hero-section .hero-block .hero-block-text-sec .hero-main-heading span {
     font-size: 36px;
   }
-  .main-container
-    .hero-section
-    .hero-block
-    .hero-block-text-sec
-    .hero-main-heading
-    .hero-sub-text {
+
+  .main-container .hero-section .hero-block .hero-block-text-sec .hero-main-heading .hero-sub-text {
     font-size: 14px;
   }
+
   .main-container .hero-section .hero-block .hero-block-text-sec .Button-group {
     flex-direction: column;
   }
+
   /* Hero section responsive css ends here */
 
   /* Trusted Brands responsive css starts here */
@@ -403,5 +398,6 @@ p {
     font-size: 12px;
     line-height: 18px;
   }
+
   /* Trusted Brands responsive css ends here */
 }
