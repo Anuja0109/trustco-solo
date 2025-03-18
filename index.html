@@ -15,10 +15,15 @@
   <body>
     <header></header>
     <main class="main-container">
+      <!-- Hero section starts here -->
       <section class="hero-section">
         <div class="hero-block">
           <img
             src="./assets/images/Hero5.svg"
+            srcset="
+              ./assets/images/Hero5.svg,
+              ./assets/images/Hero5small.svg 640w
+            "
             alt="hero5-left-img"
             class="hero-block-left-img"
           />
@@ -35,17 +40,22 @@
               <button class="btn-primary">Get Started</button>
               <button class="btn-secondary-icon-noborder">
                 <img src="./assets/images/Play.svg" alt="play-icon" />
-                <span>Check Our Video</span>
+                <span class="btn-text-span">Check Our Video</span>
               </button>
             </div>
           </div>
           <img
             src="./assets/images/Hero6.svg"
+            srcset="
+              ./assets/images/Hero6.svg,
+              ./assets/images/Hero6Small.svg 640w
+            "
             alt="hero-right-img"
             class="hero-block-right-img"
           />
         </div>
       </section>
+      <!-- Hero section ends here -->
     </main>
     <footer></footer>
   </body>
