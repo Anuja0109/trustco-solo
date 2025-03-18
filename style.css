@@ -352,8 +352,8 @@ p {
 }
 
 .main-container .trustco-header .header-btn-group button {
-  max-width: 92px;
-  max-height: 50px;
+  min-width: 92px;
+  min-height: 50px;
   padding-top: 8px;
   padding-right: 16px;
   padding-bottom: 8px;
