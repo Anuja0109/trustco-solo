@@ -113,6 +113,7 @@ p {
   border: none;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .btn-secondary-icon-noborder {
@@ -142,6 +143,7 @@ p {
   color: var(--primary-color);
   padding-top: 2px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .btn-secondary-icon-noborder:hover {
@@ -251,7 +253,7 @@ p {
 
 /* Hero Section styling ends here */
 
-@media only screen and (min-width: 601) and (max-width: 992px) {
+@media only screen and (min-width: 641) and (max-width: 992px) {
   h2 {
     font-size: 1.5rem;
   }
@@ -269,7 +271,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -281,4 +283,61 @@ p {
   h3 {
     font-size: 1.125rem;
   }
+
+  /* Hero section responsive css */
+  .main-container .hero-section {
+    padding: 40px 22px 37px 21px;
+  }
+  .main-container .hero-section .hero-block {
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  .main-container .hero-section .hero-block .hero-block-left-img {
+    order: 2;
+    clear: both;
+    float: left;
+    flex: 1 0 33%;
+    padding-bottom: 33px;
+    margin-left: 24px;
+  }
+  .main-container .hero-section .hero-block .hero-block-right-img {
+    order: 2;
+    clear: both;
+    float: right;
+    flex: 1 0 33%;
+    padding-top: 40px;
+    margin-right: 24px;
+  }
+  .main-container .hero-section .hero-block .hero-block-text-sec {
+    order: 1;
+    float: left;
+    flex: 0 1 100%;
+    gap: 16px;
+  }
+
+  .main-container
+    .hero-section
+    .hero-block
+    .hero-block-text-sec
+    .hero-main-heading,
+  .main-container
+    .hero-section
+    .hero-block
+    .hero-block-text-sec
+    .hero-main-heading
+    span {
+    font-size: 36px;
+  }
+  .main-container
+    .hero-section
+    .hero-block
+    .hero-block-text-sec
+    .hero-main-heading
+    .hero-sub-text {
+    font-size: 14px;
+  }
+  .main-container .hero-section .hero-block .hero-block-text-sec .Button-group {
+    flex-direction: column;
+  }
+  /* Hero section responsive css ends here */
 }
