@@ -398,6 +398,10 @@ p {
     font-size: 12px;
     line-height: 18px;
   }
+  .main-container .tb-section .icons-group {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
   /* Trusted Brands responsive css ends here */
 }
