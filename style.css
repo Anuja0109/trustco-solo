@@ -28,7 +28,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 8px;
+  padding: 0px;
 }
 
 a {
@@ -258,15 +258,17 @@ p {
   display: flex;
   flex-direction: row;
   min-height: fit-content;
+  min-width: 100%;
   gap: 64px;
   margin: 0px;
-  min-width: 100%;
   padding-top: 50px;
   padding-right: 150px;
   padding-bottom: 50px;
   padding-left: 150px;
   background-color: var(--white);
   justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 .main-container .tb-section .title {
   font-family: "Lato";
@@ -281,7 +283,6 @@ p {
   flex-direction: row;
   height: fit-content;
   gap: 64px;
-  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -289,7 +290,21 @@ p {
 
 /* Media Queries */
 
-@media only screen and (min-width: 641) and (max-width: 992px) {
+@media only screen and (max-width: 1118px) {
+  /* Trusted Brands responsive css starts here */
+  .main-container .tb-section {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    width: 100%;
+  }
+  /* Trusted Brands responsive css ends here */
+}
+
+@media only screen and (min-width: 641px) and (max-width: 992px) {
   h2 {
     font-size: 1.5rem;
   }
@@ -305,6 +320,12 @@ p {
   h5 {
     font-size: 1rem;
   }
+  /* Trusted Brands responsive css starts here */
+  .main-container .tb-section .icons-group {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  /* Trusted Brands responsive css ends here */
 }
 
 @media only screen and (max-width: 640px) {
@@ -376,4 +397,11 @@ p {
     flex-direction: column;
   }
   /* Hero section responsive css ends here */
+
+  /* Trusted Brands responsive css starts here */
+  .main-container .tb-section .title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  /* Trusted Brands responsive css ends here */
 }
